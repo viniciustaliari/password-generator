@@ -116,10 +116,10 @@ export default function Home() {
       let contraseña = [];
 
       function randomizar(max) {
-        return Math.floor(Math.random() * max);
+        return Math.floor((Math.random() * max)+1);
       }
       for (let i = 0; i <= valor - 1; i++) {
-        let numeroAleatorio = randomizar(3) + 1;
+        let numeroAleatorio = randomizar(4);
         if (numeroAleatorio === 1) {
           if (checkedNum) {
             contraseña[i] = randomizar(9);
